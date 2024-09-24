@@ -1,3 +1,5 @@
+// Calculation of property tax (in thousands of rubles) for a land plot (measured in square meters) based on 4 criteria.
+
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -34,7 +36,7 @@ int main() {
                   break;
       }
 
-      cout << "Are basic services (water and swewerage) available?" << endl;
+      cout << "Are basic services (water and sewerage) available?" << endl;
       cout << "\t0 - no;" << endl;
       cout << "\t1 - yes;" << endl;
       cin >> basic_services_availability;
@@ -62,7 +64,7 @@ int main() {
       }
 
       property_tax = (5000 * roof_meters + 3000 * roofless_meters) * tax_increase + 1000 * garden_meters + basic_services_tax;
-      cout << "Your property tax is " << property_tax << " rubles." << endl;
+      cout << "Your property tax is " << property_tax << " thousand rubles." << endl;
 
       return 0;
 }

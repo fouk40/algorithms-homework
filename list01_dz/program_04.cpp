@@ -1,3 +1,5 @@
+// Showing available payment options to the buyer depending on the parameters
+
 #include <iostream>
 #include <cmath>
 using namespace std;

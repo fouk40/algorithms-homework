@@ -1,3 +1,5 @@
+// Calculating g(x) and f(g(x))
+
 #include <iostream>
 #include <cmath>
 using namespace std;

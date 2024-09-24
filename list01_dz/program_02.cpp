@@ -1,3 +1,5 @@
+// Calculating the position of the stone
+
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -16,14 +18,20 @@ int main() {
     cout << "Enter a (in radians): ";
     cin >> a;
 
+    // There is no need to check the full radical expression, since the user will definitely not enter negative values.
+    if (pow(v, 2) * pow(sin(a), 2) == 0) {
+        cout << "It's impossible to calculate T" << endl;
+        return 1;
+    }
+
     t = v * sin(a) / g * (1 + sqrt(1 + 2 * g * h / (pow(v, 2) * pow(sin(a), 2))));
     cout << "Stone flight time: " << t << endl;
 
     x = v * t * cos(a);
-    cout << "Height from cliff bottom: " << x << endl;
+    cout << "Distance from cliff edge:" << x << endl;
 
     y = h + v * t * sin(a) - 1/2 * g * pow(t, 2);
-    cout << "Distance from cliff edge: " << y << endl;
+    cout << "Height from cliff bottom: " << y << endl;
 
     return 0;
 }
