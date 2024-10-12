@@ -70,7 +70,7 @@ int main()
 			x += 1;
 			sum += 1/static_cast<double>(x);
 		}
-                cout << "The desired x: " << x;
+                // x = 3
 	}
 	return 0;//код завершения приложения
 }	// Конец функции main()
