@@ -76,7 +76,7 @@ int main() {
     cin >> new_x >> new_y;
 
     expected_y = linear_regression(b0, b1, new_y);
-    cout << "Linear regression for new x = " << new_x << ": " << expected_y << "\n";
+    cout << "Predicted y for new x = " << new_x << ": " << expected_y << "\n";
 
     error = abs(new_y - expected_y);
     cout << "Error: " << error << "\n";
