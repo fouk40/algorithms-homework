@@ -65,7 +65,9 @@ int main() {
 
     b0 = avg(y, n) - b1 * avg(x, n);
 
-    cout << "Linear regression:\n";
+    cout << "Linear regression model: predicted y = " << b0 << " + " << b1 << " * x\n";
+
+    cout << "Predicted y:\n";
     for (int i = 0; i < n; i++) {
         cout << "for x = " << x[i] << ": " << linear_regression(b0, b1, x[i]) << "\n";
     }
